@@ -1,7 +1,7 @@
 import Button from "@/app/components/Button";
 import SideBar from "@/app/components/SideBar";
 import { client } from "@/sanity/lib/client";
-import { projectPost } from "@/sanity/lib/interface";
+// import { projectPost } from "@/sanity/lib/interface";
 import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
 // import { SanityImageSource } from "@sanity/image-url/lib/types/types";
