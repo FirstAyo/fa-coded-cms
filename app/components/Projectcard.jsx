@@ -1,6 +1,6 @@
 import React from "react";
 import { client } from "@/sanity/lib/client";
-import { projectCards } from "@/sanity/lib/interface";
+// import { projectCards } from "@/sanity/lib/interface";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +28,7 @@ async function getData() {
 export const revalidate = 60;
 
 async function ProjectCard() {
-  const data: projectCards[] = await getData();
+  const data = await getData();
 
   return (
     <>
@@ -56,13 +56,12 @@ async function ProjectCard() {
                     {post.title}
                   </h3>
                 </Link>
-                <p className="text-gray-500 line-clamp-3 my-5">
-                  {post.exerpt}
-                </p>
-                 {post.category && post.category.length > 0 && (
-                   <p className="absolute top-0 left-0 bg-red-700/70 text-white font-semibold px-4 py-1 rounded-tl-md">{ post.category[0].name}</p>
-                 )}
-                
+                <p className="text-gray-500 line-clamp-3 my-5">{post.exerpt}</p>
+                {post.category && post.category.length > 0 && (
+                  <p className="absolute top-0 left-0 bg-red-700/70 text-white font-semibold px-4 py-1 rounded-tl-md">
+                    {post.category[0].name}
+                  </p>
+                )}
               </div>
             </div>
           ))}
