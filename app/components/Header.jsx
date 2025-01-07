@@ -23,7 +23,7 @@ function Header() {
           <nav className="flex items-center justify-between w-[95%] mx-auto py-4">
             <Link
               href="/"
-              className="flex-1 text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 bg-clip-text text-transparent"
+              className="flex-1 text-2xl md:text-3xl font-extrabold text-red-700"
             >
               FA - <span className="">Coded</span>
             </Link>
