@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-function FormInput({ style }) {
+function FormInput() {
   function sendButton() {
     alert(
       "I am working on validating user input and getting your messages when you try to contact me. This form should be able to work in the coming days. In the main time, you can click on any of the Social Media Icons( to your left in desktop view and top of this form in mobile view) to contact me. Thank you for your understanding"
@@ -11,7 +11,7 @@ function FormInput({ style }) {
   return (
     <>
       {/* <!-- form section starts here --> */}
-      <div className="pt-2 mx-8 mb-10" style={{ width: '95%'}}>
+      <div className="pt-2 mb-10 mx-auto w-[95%]">
         <form
           action=""
           className="w-[100%] text-black bg-white shadow-lg border border-red-800 font-mono"
