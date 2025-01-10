@@ -52,11 +52,11 @@ function Header() {
               <Button text="My Resume" />
             </div>
 
-            <div className="w-12 lg:hidden ml-3">
+            <div className="lg:hidden ml-3">
               <Image
                 src={burgerMenu}
-                width={200}
-                height={100}
+                width={40}
+                height={40}
                 alt="menu toggle"
                 onClick={() => setToggleMenu((currentVal) => !currentVal)}
               />
