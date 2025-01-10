@@ -20,7 +20,7 @@ function Header() {
     <>
       <section>
         <header className="shadow">
-          <nav className="flex items-center justify-between w-[95%] mx-auto py-4">
+          <nav className="flex items-center justify-between w-[95%] mx-auto py-2">
             <Link
               href="/"
               className="flex-1 text-2xl md:text-3xl font-extrabold text-red-700"
@@ -30,7 +30,7 @@ function Header() {
 
             <div
               className={
-                "lg:flex absolute top-20 w-full lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show lg:gap-0 " +
+                "lg:flex absolute top-20 w-full bg-red-700 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show lg:gap-0 " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
@@ -38,7 +38,7 @@ function Header() {
                 <div key={index} className="py-1">
                   <Link
                     href={menuItem.href}
-                    className="text-lg px-3 font-bold border lg:border-none py-4 lg:text-red-700"
+                    className="text-lg px-3 font-bold hover:bg-red-700 hover:text-white py-4 text-white lg:text-red-700"
                     onClick={() => setToggleMenu((currentVal) => !currentVal)}
                   >
                     {" "}
