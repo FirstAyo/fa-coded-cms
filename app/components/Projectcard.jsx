@@ -32,12 +32,12 @@ async function ProjectCard() {
 
   return (
     <>
-      <section className="bg-gray-100">
-        <main className=" w-[95%] mx-auto gap-8 md:gap-4 grid md:grid-cols-2 lg:grid-cols-3 my-5 py-10">
+      <section className="bg-gray-50">
+        <main className=" w-[95%] mx-auto gap-8 md:gap-4 grid md:grid-cols-2 lg:grid-cols-3 py-10">
           {data.map((post, idx) => (
             <div
               key={idx}
-              className="rounded-t-md relative bg-white px-3 py-3 shadow-xl"
+              className="rounded-t-md relative bg-white px-3 py-3 shadow-2xl"
             >
               <Link href={`/projects/${post.currentSlug}`}>
                 {" "}

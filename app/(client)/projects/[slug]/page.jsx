@@ -138,14 +138,14 @@ async function BlogArticle({ params }) {
               <Button text="View Live Website" />
             </div>
 
-            <div className="flex justify-between align-bottom w-[90%] mx-auto mb-10">
+            {/* <div className="flex justify-between align-bottom w-[90%] mx-auto mb-10">
               <button className="text-xl font-bold bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 bg-clip-text text-transparent">
                 Prev
               </button>
               <button className="text-xl font-bold bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 bg-clip-text text-transparent">
                 Next
               </button>
-            </div>
+            </div> */}
           </div>
         </article>
 

@@ -24,7 +24,7 @@ async function SideBar() {
 
   return (
     <>
-      <section className=" lg:w-[35%] mx-auto">
+      <section className=" lg:w-[35%] mx-auto px-3">
         <main className=" gap-8 md:gap-4 grid md:grid-cols-2 lg:grid-cols-1">
           {data.map((post, idx) => (
             <div

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <section className="max-w-[1440px] mx-auto shadow-xl">
+        <section className="max-w-[1440px] mx-auto shadow-2xl">
           <Header />
           {children}
           <Footer />

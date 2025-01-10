@@ -26,7 +26,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="border-t-2 border-red-800 font-mono w-[95%] mx-auto">
+      <footer className="border-t border-red-800 font-mono lg:w-[95%] mx-auto">
         <p className="text-lg font-semibold text-gray-600 text-center py-3 w-[90%] mx-auto">
           2024. All Rights Reserved. Fa-Coded
         </p>
