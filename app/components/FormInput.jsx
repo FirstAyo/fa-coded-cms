@@ -11,10 +11,10 @@ function FormInput() {
   return (
     <>
       {/* <!-- form section starts here --> */}
-      <div className="pt-2 mb-10 mx-3 lg:w-[50%]">
+      <div className="pt-2 mb-10 mx-auto lg:w-[95%]">
         <form
           action=""
-          className="w-[100%] text-black bg-white shadow-lg border border-red-800 font-mono"
+          className="w-[95%] mx-auto lg:w-[50%] lg:mx-1 text-black bg-white shadow-lg border border-red-800 font-mono"
         >
           <h1 className="text-2xl py-5 w-[90%] mx-auto">Get in touch</h1>
           <p className="text-sm text-gray-500 w-[90%] mx-auto">
