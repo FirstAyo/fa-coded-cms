@@ -11,7 +11,7 @@ function FormInput() {
   return (
     <>
       {/* <!-- form section starts here --> */}
-      <div className="pt-2 mb-10 mx-auto w-[95%]">
+      <div className="pt-2 mb-10 mx-3 lg:w-[50%]">
         <form
           action=""
           className="w-[100%] text-black bg-white shadow-lg border border-red-800 font-mono"

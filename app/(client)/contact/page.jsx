@@ -28,9 +28,14 @@ function ContactMe() {
   return (
     <>
       <section className="bg-gray-50">
-        <div className="flex flex-col lg:flex-row w-[90%] mx-auto font-mono">
+        <h1 className="text-4xl text-center py-5 uppercase font-semibold">
+          Contact Me
+        </h1>
+        <div className="flex flex-col lg:flex-row w-[90%] mx-auto">
           <div className="flex-1 flex mt-14 flex-col gap-5">
-            <h1 className="text-4xl text-center lg:text-start">Contact Me</h1>
+            <h2 className="text-3xl underline text-center lg:text-start font-semibold">
+              On Social Media
+            </h2>
             <p className="text-xl text-center lg:text-start">
               Ready to start your next project or have any questions? Feel free
               to reach out to me.
@@ -58,7 +63,13 @@ function ContactMe() {
           </div>
         </div>
 
-        <FormInput />
+        <div>
+          <h2 className="text-3xl underline text-center pb-8 font-semibold">
+            Message Me
+          </h2>
+
+          <FormInput />
+        </div>
       </section>
     </>
   );

@@ -31,7 +31,7 @@ function ContactCards() {
 
   return (
     <>
-      <section className="flex flex-col gap-5 w-[90%] mx-auto mt-10 mb-20 font-mono">
+      <section className="flex flex-col gap-5 w-[100%] mx-auto mt-10 mb-20 font-mono">
         {dataItems.map((dataItem) => (
           <div
             key={dataItem.id}
@@ -48,7 +48,7 @@ function ContactCards() {
             </div>
             <div className="flex flex-col gap-2">
               <h1 className="font-bold">{dataItem.title}</h1>
-              <p className="text-justify text-sm"> {dataItem.description}</p>
+              <p className="text-sm"> {dataItem.description}</p>
             </div>
           </div>
         ))}
