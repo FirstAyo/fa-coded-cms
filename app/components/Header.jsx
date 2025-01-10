@@ -30,7 +30,7 @@ function Header() {
 
             <div
               className={
-                "lg:flex absolute top-20 w-full bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show lg:gap-0 " +
+                "lg:flex absolute top-20 w-full lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show lg:gap-0 " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
