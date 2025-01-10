@@ -42,8 +42,8 @@ function ContactCards() {
                 src={dataItem.icon}
                 alt={dataItem.title}
                 className="w-8 h-8 p-1"
-                width={300}
-                height={300}
+                width={100}
+                height={100}
               />
             </div>
             <div className="flex flex-col gap-2">
