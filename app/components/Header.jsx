@@ -11,7 +11,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const menuItems = [
-    // { name: "Home", href: "/" },
+    { name: "Home", href: "/" },
     { name: "My Projects", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact Me", href: "/contact" },
@@ -38,7 +38,7 @@ function Header() {
                 <div key={index} className="py-1">
                   <Link
                     href={menuItem.href}
-                    className="text-lg px-3 font-bold text-white border lg:border-none py-4 lg:text-red-700"
+                    className="text-lg px-3 font-bold border lg:border-none py-4 lg:text-red-700"
                     onClick={() => setToggleMenu((currentVal) => !currentVal)}
                   >
                     {" "}
