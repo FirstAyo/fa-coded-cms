@@ -18,14 +18,14 @@ function SearchBox() {
             name="categories"
             id="categories"
             // value={changeOption}
-            className="uppercase font-semibold border border-red-700 rounded-r-md py-2.5 px-4 bg-red-700/80 text-white"
+            className=" font-semibold border border-red-700 rounded-r-md py-2.5 px-4 bg-red-700/80 text-white"
             onChange={(e) => setChangeOption(e.target.value)}
           >
-            <option value="All Projects">All Projects</option>
+            <option value="All Projects">All PROJECTS</option>
             <option value="HTML & CSS">HTML & CSS</option>
             <option value="REACT JS">REACT JS</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="Tailwind CSS">Tailwind CSS</option>
+            <option value="JavaScript">JAVASCRIPT</option>
+            <option value="Tailwind CSS">TAILWIND CSS</option>
           </select>
         </div>
       </section>
