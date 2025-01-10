@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "FA-Coded Portfolio",
-  description: "Showcasing the best Responsive websites built with latest Web Technologies ",
+  description:
+    "Showcasing the best Responsive websites built with latest Web Technologies ",
 };
 
 export default function RootLayout({ children }) {
@@ -24,9 +25,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <section className="max-w-[1440px] mx-auto shadow-xl">
+          <Header />
+          {children}
+          <Footer />
+        </section>
       </body>
     </html>
   );

@@ -11,7 +11,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "/" },
+    // { name: "Home", href: "/" },
     { name: "My Projects", href: "/projects" },
     { name: "About", href: "/about" },
     { name: "Contact Me", href: "/contact" },
@@ -30,7 +30,7 @@ function Header() {
 
             <div
               className={
-                "lg:flex absolute top-20 w-full mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show gap-2 lg:gap-0 " +
+                "lg:flex absolute top-20 w-full bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative flex-1 py-2 items-center justify-center lg:justify-between lg:show lg:gap-0 " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
@@ -38,7 +38,7 @@ function Header() {
                 <div key={index} className="py-1">
                   <Link
                     href={menuItem.href}
-                    className="text-lg px-2.5 font-bold bg-gradient-to-r from-purple-700 via-orange-700 to-red-800 bg-clip-text text-transparent"
+                    className="text-lg px-3 font-bold text-white border lg:border-none py-4 lg:text-red-700"
                     onClick={() => setToggleMenu((currentVal) => !currentVal)}
                   >
                     {" "}
