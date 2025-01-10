@@ -31,7 +31,7 @@ function ContactMe() {
         <h1 className="text-4xl text-center py-5 uppercase font-semibold">
           Contact Me
         </h1>
-        <div className="flex flex-col lg:flex-row w-[90%] mx-auto">
+        <div className="flex flex-col lg:flex-row w-[90%] mx-auto gap-5">
           <div className="flex-1 flex mt-14 flex-col gap-5">
             <h2 className="text-3xl underline text-center lg:text-start font-semibold">
               On Social Media
@@ -64,7 +64,7 @@ function ContactMe() {
         </div>
 
         <div>
-          <h2 className="text-3xl underline text-center pb-8 font-semibold">
+          <h2 className="text-3xl underline text-center lg:text-start font-semibold w-[90%] mx-auto mb-3">
             Message Me
           </h2>
 
