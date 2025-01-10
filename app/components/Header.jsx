@@ -20,7 +20,7 @@ function Header() {
     <>
       <section>
         <header className="shadow">
-          <nav className="flex items-center justify-between w-[95%] mx-auto py-2">
+          <nav className="flex items-center justify-between w-[95%] mx-auto py-3">
             <Link
               href="/"
               className="flex-1 text-2xl md:text-3xl font-extrabold text-red-700"
