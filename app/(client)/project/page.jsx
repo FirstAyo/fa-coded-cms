@@ -4,7 +4,9 @@ import React from "react";
 function ProjectsPage() {
   return (
     <div>
-        <h1 className="text-2xl px-5 border-b border-red-800 lg:w-[95%] mx-auto">All Projects</h1>
+      <h1 className="text-2xl px-5 border-b border-red-800 lg:w-[95%] mx-auto">
+        All Projects
+      </h1>
       <ProjectCard />
     </div>
   );
