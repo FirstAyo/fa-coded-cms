@@ -4,7 +4,7 @@ function SearchBox() {
   return (
     <>
       <section>
-        <div className="flex items-center justify-center my-10 lg:w-[40%] mx-auto">
+        <div className="flex items-center justify-center my-10 lg:w-[50%] mx-auto">
           <input
             placeholder="Select from Categories"
             className="border py-2 px-4 rounded-l-md md:w-[60%]"
