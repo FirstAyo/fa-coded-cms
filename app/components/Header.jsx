@@ -49,7 +49,11 @@ function Header() {
             </div>
 
             <div className="flex-1 flex justify-end">
-              <Link href="https://drive.google.com/file/d/19MNlkOHemlPxuyC5jc75x8CvhGK6rxuj/view?usp=drive_link">
+              <Link
+                href="https://drive.google.com/file/d/19MNlkOHemlPxuyC5jc75x8CvhGK6rxuj/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button text="My Resume" />
               </Link>
             </div>
