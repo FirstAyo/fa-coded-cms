@@ -88,8 +88,8 @@ async function BlogArticle({ params }) {
                 <Image
                   src={urlFor(data.author[0].bioImage).url()}
                   alt="profile pix"
-                  width={300}
-                  height={300}
+                  width={1000}
+                  height={1000}
                   className="w-12 h-12 rounded-full"
                 />
                 <h4 className="text-sm md:text-[16px] text-gray-500 font-semibold">
@@ -120,8 +120,8 @@ async function BlogArticle({ params }) {
           </div>
           <Image
             src={urlFor(data.featuredImage).url()}
-            width={300}
-            height={250}
+            width={1500}
+            height={1500}
             priority
             alt={data.title}
             className="w-full object-cover h-[300px]"
@@ -168,10 +168,10 @@ const myPortableTextComponents = {
     image: ({ value }) => (
       <Image
         src={urlFor(value).url()}
-        width={200}
-        height={200}
+        width={1500}
+        height={1500}
         alt="image"
-        className="w-[100%] md:h-96"
+        className="w-full object-cover md:h-96"
       />
     ),
   },

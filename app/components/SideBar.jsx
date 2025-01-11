@@ -36,8 +36,8 @@ async function SideBar() {
                 <Image
                   src={urlFor(post.featuredImage).url()}
                   alt={post.title}
-                  width={300}
-                  height={300}
+                  width={1500}
+                  height={1500}
                   priority
                   className=" object-cover h-[250px] w-full"
                 />
