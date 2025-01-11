@@ -105,8 +105,12 @@ async function BlogArticle({ params }) {
               {/* social media icons for editor/author */}
               <div className="flex-1 flex items-center justify-center md:justify-end gap-5">
                 {socialIcons.map((socialIcon, index) => (
-                  <Link key={index} href={socialIcon.imageUrl} target="_blank"
-                  rel="noopener noreferrer">
+                  <Link
+                    key={index}
+                    href={socialIcon.imageUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       src={socialIcon.authorSocialIcon}
                       width={24}
@@ -137,12 +141,18 @@ async function BlogArticle({ params }) {
             </div>
 
             <div className="flex justify-center items-center gap-3 my-20">
-              <Link href={data.gitSlug} target="_blank"
-                rel="noopener noreferrer">
+              <Link
+                href={data.gitSlug}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button text="View on GitHub" />
               </Link>
-              <Link href={data.liveSlug} target="_blank"
-                rel="noopener noreferrer">
+              <Link
+                href={data.liveSlug}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button text="View Live Website" />
               </Link>
             </div>
