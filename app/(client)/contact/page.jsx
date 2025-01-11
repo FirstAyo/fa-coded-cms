@@ -47,7 +47,8 @@ function ContactMe() {
                   className="bg-white w-[50px] h-[50px] rounded-full shadow-md border-2 border-gray-700"
                   key={socialIcon.id}
                 >
-                  <Link href={socialIcon.url}>
+                  <Link href={socialIcon.url} target="_blank"
+                rel="noopener noreferrer">
                     <Image
                       src={socialIcon.image}
                       alt=""
