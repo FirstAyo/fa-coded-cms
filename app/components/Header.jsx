@@ -49,7 +49,9 @@ function Header() {
             </div>
 
             <div className="flex-1 flex justify-end">
-              <Button text="My Resume" />
+              <Link href="https://drive.google.com/file/d/19MNlkOHemlPxuyC5jc75x8CvhGK6rxuj/view?usp=drive_link">
+                <Button text="My Resume" />
+              </Link>
             </div>
 
             <div className="lg:hidden ml-3">
