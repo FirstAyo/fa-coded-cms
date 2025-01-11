@@ -40,9 +40,9 @@ function Footer() {
                 <Image
                   src={socialIcon.image}
                   alt=""
-                  className="w-full p-3"
-                  width={300}
-                  height={250}
+                  className="w-full h-full p-3 object-cover"
+                  width={900}
+                  height={900}
                 />
               </Link>
             </div>

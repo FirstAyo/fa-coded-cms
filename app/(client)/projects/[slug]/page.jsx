@@ -108,8 +108,8 @@ async function BlogArticle({ params }) {
                   <Link key={index} href={socialIcon.imageUrl}>
                     <Image
                       src={socialIcon.authorSocialIcon}
-                      width={24}
-                      height={24}
+                      width={900}
+                      height={900}
                       alt="socialIcon"
                       className="w-[24] h-[24] "
                     />
@@ -171,7 +171,7 @@ const myPortableTextComponents = {
         width={1500}
         height={1500}
         alt="image"
-        className="w-full object-cover md:h-96"
+        className="w-full object-cover h-[200px] md:h-96"
       />
     ),
   },
