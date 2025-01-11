@@ -57,16 +57,16 @@ async function BlogArticle({ params }) {
   const data = await getData(params.slug);
   const socialIcons = [
     {
-      authorImage: emailIcon,
-      // "imageUrl": data.author.twitterSlug[0],
+      authorSocialIcon: emailIcon,
+      imageUrl: "mailto:firstayomike@gmail.com?",
     },
     {
-      authorImage: linkedInIcon,
-      // "imageUrl": data.author.linkedInSlug[0],
+      authorSocialIcon: linkedInIcon,
+      imageUrl: "https://www.linkedin.com/in/firstayo",
     },
     {
-      authorImage: gitHubIcon,
-      // "imageUrl": data.author.fbSlug[0],
+      authorSocialIcon: gitHubIcon,
+      imageUrl: "https://github.com/FirstAyo",
     },
   ];
   return (
@@ -86,7 +86,7 @@ async function BlogArticle({ params }) {
             <div className="flex flex-col md:flex-row md:items-center justify-between border-b-2 px-2 py-2 mb-5">
               <div className="flex-1 flex items-center gap-4">
                 <Image
-                  src={profilePix}
+                  src={urlFor(data.author[0].bioImage).url()}
                   alt="profile pix"
                   width={300}
                   height={300}
@@ -105,9 +105,9 @@ async function BlogArticle({ params }) {
               {/* social media icons for editor/author */}
               <div className="flex-1 flex items-center justify-center md:justify-end gap-5">
                 {socialIcons.map((socialIcon, index) => (
-                  <Link key={index} href="/">
+                  <Link key={index} href={socialIcon.imageUrl}>
                     <Image
-                      src={socialIcon.authorImage}
+                      src={socialIcon.authorSocialIcon}
                       width={24}
                       height={24}
                       alt="socialIcon"
