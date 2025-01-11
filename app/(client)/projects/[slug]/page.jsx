@@ -28,6 +28,8 @@ async function getData(slug) {
     featuredImage,
     publishedAt,
     _id,
+    "gitSlug": gitSlug.current,
+    "liveSlug": liveSlug.current,
     category[] -> {
       _id,
       slug,
@@ -134,8 +136,12 @@ async function BlogArticle({ params }) {
             </div>
 
             <div className="flex justify-center items-center gap-3 my-20">
-              <Button text="View on GitHub" />
-              <Button text="View Live Website" />
+              <Link href={data.gitSlug}>
+                <Button text="View on GitHub" />
+              </Link>
+              <Link href={data.liveSlug}>
+                <Button text="View Live Website" />
+              </Link>
             </div>
 
             {/* <div className="flex justify-between align-bottom w-[90%] mx-auto mb-10">
