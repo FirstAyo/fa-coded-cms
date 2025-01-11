@@ -108,10 +108,10 @@ async function BlogArticle({ params }) {
                   <Link key={index} href={socialIcon.imageUrl}>
                     <Image
                       src={socialIcon.authorSocialIcon}
-                      width={900}
-                      height={900}
+                      width={24}
+                      height={24}
                       alt="socialIcon"
-                      className="w-[24] h-[24] "
+                      className="w-[24px] h-[24px] "
                     />
                   </Link>
                 ))}
