@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 function SearchBox() {
-
-        const [changeOption, setChangeOption] = useState("All Projects")
-        
+  const [changeOption, setChangeOption] = useState("All Projects");
 
   return (
     <>
@@ -22,7 +20,7 @@ function SearchBox() {
             title="categories"
             // value={changeOption}
             className="uppercase font-semibold border border-red-700 rounded-r-md py-2.5 px-4 bg-red-700 text-white"
-            onChange={e => setChangeOption(e.target.value)}
+            onChange={(e) => setChangeOption(e.target.value)}
           >
             <option value="All Projects">All Projects</option>
             <option value="HTML & CSS">HTML & CSS</option>
