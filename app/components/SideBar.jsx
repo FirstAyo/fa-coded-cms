@@ -54,7 +54,7 @@ async function SideBar() {
                   </h3>
                 </Link>
                 <p className="text-gray-500 line-clamp-3 my-5">{post.exerpt}</p>
-                <p className="absolute top-0 left-0 bg-red-700/70 text-white font-semibold px-4 py-1">
+                <p className="absolute top-0 left-0 bg-red-700 text-white font-semibold px-4 py-1">
                   {post.category[0].name}
                 </p>
               </div>
