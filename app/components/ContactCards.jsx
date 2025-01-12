@@ -31,7 +31,7 @@ function ContactCards() {
 
   return (
     <>
-      <section className="flex flex-col gap-5 w-[100%] mx-auto mt-10 mb-20 font-mono">
+      <section className="flex flex-col gap-5 w-[100%] mx-auto mt-10 mb-20">
         {dataItems.map((dataItem) => (
           <div
             key={dataItem.id}

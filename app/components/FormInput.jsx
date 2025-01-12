@@ -60,9 +60,9 @@ function FormInput() {
           ref={form}
           onSubmit={sendEmail}
           action=""
-          className="w-[95%] mx-auto lg:w-[50%] lg:mx-1 text-black bg-white shadow-lg border border-red-800 font-mono"
+          className="w-[95%] mx-auto lg:w-[50%] lg:mx-1 text-black bg-white shadow-lg border border-red-700"
         >
-          <h1 className="text-2xl py-5 w-[90%] mx-auto">Get in touch</h1>
+          <h1 className="text-2xl py-5 w-[90%] mx-auto font-semibold">Get in touch</h1>
           <p className="text-sm text-gray-500 w-[90%] mx-auto">
             Ready to start your next project or have any questions? Feel free to
             reach out to me using the form below.
