@@ -140,7 +140,7 @@ async function BlogArticle({ params }) {
               />
             </div>
 
-            <div className="flex justify-center items-center gap-3 my-20">
+            <div className="flex justify-center items-center gap-3 my-5">
               <Link
                 href={data.gitSlug}
                 target="_blank"

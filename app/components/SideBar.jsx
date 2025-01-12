@@ -11,7 +11,12 @@ async function getData() {
   title,
     exerpt,
     "currentSlug": slug.current,
-    featuredImage
+    featuredImage,
+     category[] -> {
+      _id,
+      slug,
+      name
+    }
 }`;
 
   const data = await client.fetch(query);
@@ -50,7 +55,7 @@ async function SideBar() {
                 </Link>
                 <p className="text-gray-500 line-clamp-3 my-5">{post.exerpt}</p>
                 <p className="absolute top-0 left-0 bg-red-700/70 text-white font-semibold px-4 py-1">
-                  Category
+                  {post.category[0].name}
                 </p>
               </div>
             </div>
