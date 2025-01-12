@@ -21,7 +21,7 @@ function SearchBox() {
             id="categories"
             title="categories"
             // value={changeOption}
-            className="uppercase font-semibold border border-red-700 rounded-r-md py-2.5 px-4 bg-red-700/80 text-white"
+            className="uppercase font-semibold border border-red-700 rounded-r-md py-2.5 px-4 bg-red-700 text-white"
             onChange={e => setChangeOption(e.target.value)}
           >
             <option value="All Projects">All Projects</option>

@@ -75,7 +75,7 @@ function FormInput() {
               value={formData.from_name}
               onChange={handleInputChange}
               placeholder="Enter Name"
-              className="bg-transparent border-b-2 border-gray-500 my-5 py-1 px-3 w-[95%]"
+              className="bg-transparent border rounded-md border-gray-500 my-4 py-1 px-3 w-[95%]"
             />
           </div>
           <div className="w-[90%] mx-auto">
@@ -86,7 +86,7 @@ function FormInput() {
               value={formData.email_subject}
               onChange={handleInputChange}
               placeholder="Enter Subject"
-              className="bg-transparent border-b-2 border-gray-500 my-5 py-1 px-3 w-[95%]"
+              className="bg-transparent border rounded-md border-gray-500 my-4 py-1 px-3 w-[95%]"
             />
           </div>
           <div className="w-[90%] mx-auto">
@@ -97,7 +97,7 @@ function FormInput() {
               value={formData.user_email}
               onChange={handleInputChange}
               placeholder="Email Address"
-              className="bg-transparent border-b-2 border-gray-500 my-5 py-1 px-3 w-[95%]"
+              className="bg-transparent border rounded-md border-gray-500 my-4 py-1 px-3 w-[95%]"
             />
           </div>
           <div className="w-[90%] mx-auto">
@@ -108,7 +108,7 @@ function FormInput() {
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Leave a Message"
-              className="bg-transparent border-2 border-gray-500 my-5 py-1 px-3 w-[95%] h-36"
+              className="bg-transparent border rounded-md border-gray-500 my-5 py-1 px-3 w-[95%] h-36"
             ></textarea>
             {/* <!-- <input type="text" placeholder="Name"
                                 className="bg-transparent border-b-2 border-gray-500 my-5 py-1 w-[95%]"/> --> */}

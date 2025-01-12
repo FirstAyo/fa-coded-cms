@@ -72,33 +72,36 @@ async function BlogArticle({ params }) {
   return (
     <>
       <section className="flex flex-col lg:flex-row my-5">
-        <article className="lg:w-[60%] mx-2 px-3 mb-5 py-3 lg:mb-0 lg:py-0 shadow-2xl">
-          <div>
+        <article className="lg:w-[60%] mx-2 mb-5 py-3 lg:mb-0 lg:py-0 shadow-2xl">
+          <div className="">
             {data.category && data.category.length > 0 && (
-              <p className="bg-red-700/70 text-white font-semibold px-4 py-1 ">
+              <p className="bg-red-700 text-white font-semibold px-4 py-1 ">
                 {data.category[0].name}
               </p>
             )}
-            <h2 className="text-lg md:text-2xl text-gray-700 font-bold py-5 border-b-2 ">
+            <h2 className="text-lg md:text-2xl px-3 text-gray-700 font-bold py-5 border-b border-red-700 ">
               {data.title}
             </h2>
+
             {/* author bio data here */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between border-b-2 px-2 py-2 mb-5">
+            <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-red-700 px-2 py-2 mb-5">
               <div className="flex-1 flex items-center gap-4">
-                <Image
-                  src={urlFor(data.author[0].bioImage).url()}
-                  alt="profile pix"
-                  width={1000}
-                  height={1000}
-                  className="w-12 h-12 rounded-full"
-                />
-                <h4 className="text-sm md:text-[16px] text-gray-500 font-semibold">
-                  {data.author[0].name}
-                </h4>
+                <div className="flex-1 flex items-center gap-4">
+                  <Image
+                    src={urlFor(data.author[0].bioImage).url()}
+                    alt="profile pix"
+                    width={1000}
+                    height={1000}
+                    className="w-12 h-12 rounded-full"
+                  />
+                  <h4 className="text-sm md:text-[16px] text-gray-500 font-semibold">
+                    {data.author[0].name}
+                  </h4>
+                </div>
                 <p
                   className={`${dateFont.className} text-lg md:text-[16px] text-gray-500 font-bold`}
                 >
-                  {new Date(data.publishedAt).toDateString()}
+                  {`Published: ${new Date(data.publishedAt).toDateString()}`}
                 </p>
               </div>
 
@@ -123,16 +126,19 @@ async function BlogArticle({ params }) {
               </div>
             </div>
           </div>
-          <Image
-            src={urlFor(data.featuredImage).url()}
-            width={1500}
-            height={1500}
-            priority
-            alt={data.title}
-            className="w-full object-cover h-[300px]"
-          />
+          <div className="px-1">
+            <Image
+              src={urlFor(data.featuredImage).url()}
+              width={1500}
+              height={1500}
+              priority
+              alt={data.title}
+              className="w-full object-cover h-[300px] border rounded-md"
+            />
+          </div>
 
-          <div className="">
+          {/* this div holds the text/post content from sanity.io */}
+          <div className="px-3">
             <div className="prose prose-blue prose-lg max-w-none px-2 py-10">
               <PortableText
                 value={data.content}
@@ -140,6 +146,7 @@ async function BlogArticle({ params }) {
               />
             </div>
 
+            {/* div that holds the two bottom buttons */}
             <div className="flex justify-center items-center gap-3 my-5">
               <Link
                 href={data.gitSlug}
@@ -184,7 +191,7 @@ const myPortableTextComponents = {
         width={1500}
         height={1500}
         alt="image"
-        className="w-full object-cover h-[250px] md:h-96"
+        className="w-full object-cover h-[250px] md:h-96 shadow-xl"
       />
     ),
   },
