@@ -7,7 +7,6 @@ import { PortableText } from "next-sanity";
 // import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import Image from "next/image";
 import React from "react";
-import profilePix from "../../../../public/Festus.jpg";
 import { VT323 } from "next/font/google";
 import gitHubIcon from "../../../../public/github.png";
 import emailIcon from "../../../../public/email.png";
@@ -75,7 +74,7 @@ async function BlogArticle({ params }) {
         <article className="lg:w-[60%] mx-2 mb-5 py-3 lg:mb-0 lg:py-0 shadow-2xl">
           <div className="">
             {data.category && data.category.length > 0 && (
-              <p className="bg-red-700 text-white font-semibold px-4 py-1 ">
+              <p className="bg-red-700 text-white font-semibold px-4 py-2 ">
                 {data.category[0].name}
               </p>
             )}
@@ -139,7 +138,7 @@ async function BlogArticle({ params }) {
 
           {/* this div holds the text/post content from sanity.io */}
           <div className="px-3">
-            <div className="prose prose-blue prose-lg max-w-none px-2 py-10">
+            <div className={` prose prose-blue prose-lg max-w-none px-2 py-10`}>
               <PortableText
                 value={data.content}
                 components={myPortableTextComponents}
