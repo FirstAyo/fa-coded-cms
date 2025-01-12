@@ -31,7 +31,7 @@ function FormInput() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Email sent Successfully! I'll get back to you ASAP");
           // Clear the form after successful submission
           setFormData({
             from_name: "",
@@ -41,7 +41,7 @@ function FormInput() {
           });
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          alert("FAILED...", error.text);
         }
       );
   };
