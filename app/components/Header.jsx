@@ -23,14 +23,14 @@ function Header() {
           <nav className="flex items-center justify-between w-[95%] mx-auto py-3">
             <Link
               href="/"
-              className="lg:w-[30%] text-2xl md:text-3xl font-extrabold text-red-700"
+              className="lg:w-[20%] text-2xl md:text-3xl font-extrabold text-red-700"
             >
               FA - <span className="">Coded</span>
             </Link>
 
             <div
               className={
-                "lg:flex absolute top-16 bg-red-700 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[40%] py-2 items-center justify-center lg:show " +
+                "lg:flex absolute top-16 bg-red-700 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 items-center justify-center lg:show " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
