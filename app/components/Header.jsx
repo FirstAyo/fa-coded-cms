@@ -30,7 +30,7 @@ function Header() {
 
             <div
               className={
-                "lg:flex absolute top-16 bg-red-700 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative w-lg:[40%] py-2 items-center justify-center lg:show " +
+                "lg:flex absolute top-16 bg-red-700 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[40%] py-2 items-center justify-center lg:show " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
@@ -56,16 +56,15 @@ function Header() {
               >
                 <Button text="My Resume" />
               </Link>
-            </div>
-
-            <div className="lg:hidden ml-3">
-              <Image
-                src={burgerMenu}
-                width={40}
-                height={40}
-                alt="menu toggle"
-                onClick={() => setToggleMenu((currentVal) => !currentVal)}
-              />
+              <div className="lg:hidden ml-3">
+                <Image
+                  src={burgerMenu}
+                  width={40}
+                  height={40}
+                  alt="menu toggle"
+                  onClick={() => setToggleMenu((currentVal) => !currentVal)}
+                />
+              </div>
             </div>
           </nav>
         </header>
