@@ -60,7 +60,7 @@ function FormInput() {
           ref={form}
           onSubmit={sendEmail}
           action=""
-          className="w-[95%] mx-auto lg:w-[50%] lg:mx-1 text-black bg-white shadow-lg border border-red-700"
+          className="w-[95%] mx-auto lg:w-[50%] lg:mx-1 text-black bg-white shadow-lg border border-[#3d5168]"
         >
           <h1 className="text-2xl py-5 w-[90%] mx-auto font-semibold">Get in touch</h1>
           <p className="text-sm text-gray-500 w-[90%] mx-auto">
@@ -117,7 +117,7 @@ function FormInput() {
           <div className="w-[90%] mx-auto items">
             <button
               //   onClick={sendButton}
-              className="bg-red-800 rounded-full text-white px-1 py-2 text-lg font-semibold flex-1 w-[95%] mb-10"
+              className="bg-[#3d5168] rounded-full text-white px-1 py-2 text-lg font-semibold flex-1 w-[95%] mb-10"
             >
               Send
             </button>

@@ -74,16 +74,16 @@ async function BlogArticle({ params }) {
         <article className="lg:w-[60%] mx-2 mb-5 py-3 lg:mb-0 lg:py-0 shadow-2xl">
           <div className="">
             {data.category && data.category.length > 0 && (
-              <p className="bg-red-700 text-white font-semibold px-4 py-2 ">
+              <p className="bg-[#3d5168] text-white font-semibold px-4 py-2 ">
                 {data.category[0].name}
               </p>
             )}
-            <h2 className="text-lg md:text-2xl px-3 text-gray-700 font-bold py-5 border-b border-red-700 ">
+            <h2 className="text-lg md:text-2xl px-3 text-gray-700 font-bold py-5 border-b border-[#3d5168] ">
               {data.title}
             </h2>
 
             {/* author bio data here */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-red-700 px-2 py-2 mb-5">
+            <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-[#3d5168] px-2 py-2 mb-5">
               <div className="flex-1 flex items-center gap-4">
                 <div className="flex-1 flex items-center gap-4">
                   <Image
