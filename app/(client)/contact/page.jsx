@@ -6,6 +6,12 @@ import Image from "next/image";
 import ContactCards from "../../components/ContactCards";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Contact Me | FA-Coded",
+  description:
+    "Contact page of FA-Coded ",
+};
+
 function ContactMe() {
   const socialIcons = [
     {

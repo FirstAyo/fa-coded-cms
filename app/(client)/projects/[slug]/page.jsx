@@ -21,28 +21,28 @@ import Link from "next/link";
 
 async function getData(slug) {
   const query = `*[_type == 'project' && slug.current == '${slug}']{
-  "currentSlug": slug.current,
-    title,
-    content,
-    featuredImage,
-    publishedAt,
-    _id,
-    "gitSlug": gitSlug.current,
-    "liveSlug": liveSlug.current,
-    category[] -> {
+    "currentSlug": slug.current,
+      title,
+      content,
+      featuredImage,
+      publishedAt,
       _id,
-      slug,
-      name
-    },
-    author[] ->{
-      bioImage,
-      name,
-      shortBio,
-      "twitterSlug": twitterSlug.current,
-      "linkedInSlug": linkedInSlug.current,
-      "fbSlug": fbSlug.current
-    }
-}[0]`;
+      "gitSlug": gitSlug.current,
+      "liveSlug": liveSlug.current,
+      category[] -> {
+        _id,
+        slug,
+        name
+      },
+      author[] ->{
+        bioImage,
+        name,
+        shortBio,
+        "twitterSlug": twitterSlug.current,
+        "linkedInSlug": linkedInSlug.current,
+        "fbSlug": fbSlug.current
+      }
+  }[0]`;
 
   const data = await client.fetch(query);
   return data;
