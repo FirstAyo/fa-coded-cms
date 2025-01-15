@@ -30,15 +30,15 @@ function Header() {
 
             <div
               className={
-                "lg:flex absolute top-16 bg-[#3d5168] lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 items-center justify-center lg:show " +
+                "z-10 flex flex-col lg:flex lg:flex-row absolute top-16 bg-[#3d5168]/80 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 lg:items-center lg:justify-center " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
               {menuItems.map((menuItem, index) => (
-                <div key={index} className="py-1">
+                <div key={index} className="py-5 md:py-2 border lg:shadow-xl">
                   <Link
                     href={menuItem.href}
-                    className="text-lg px-2 md:px-7 font-bold hover:bg-[#3d5168] hover:text-white py-3 text-white lg:text-[#3d5168]"
+                    className="text-lg px-2 py-4 md:px-7 font-bold hover:bg-[#3d5168] hover:text-white md:py-3 text-white lg:text-[#3d5168]"
                     onClick={() => setToggleMenu((currentVal) => !currentVal)}
                   >
                     {" "}
