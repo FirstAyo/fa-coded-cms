@@ -31,7 +31,7 @@ function Header() {
 
             <div
               className={
-                "z-10 flex flex-col lg:flex lg:flex-row absolute top-16 bg-[#3d5168]/80 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 lg:items-center lg:justify-center " +
+                "z-10 flex flex-col lg:flex lg:flex-row absolute top-16 bg-[#3d5168]/95 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 lg:items-center lg:justify-center " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
