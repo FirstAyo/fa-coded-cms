@@ -69,8 +69,14 @@ function Header() {
             </div>
           </nav>
         </header>
-        <VideoPlayer />
-        <SearchBox />
+        <div className="flex flex-col gap 2">
+          <div className="mb-10">
+            <VideoPlayer />
+          </div>
+          <div>
+            <SearchBox />
+          </div>
+        </div>
       </section>
     </>
   );
