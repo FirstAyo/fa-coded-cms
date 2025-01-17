@@ -6,6 +6,7 @@ import Button from "./Button";
 import SearchBox from "./SearchBox";
 import Image from "next/image";
 import burgerMenu from "../../public/menu-burger.svg";
+import VideoPlayer from "./VideoPlayer";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -68,7 +69,7 @@ function Header() {
             </div>
           </nav>
         </header>
-
+        <VideoPlayer />
         <SearchBox />
       </section>
     </>
