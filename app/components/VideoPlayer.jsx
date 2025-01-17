@@ -17,7 +17,7 @@ function VideoPlayer() {
   ];
 
   function showNextVideo() {
-    setNextVideo(nextVideo + 1);
+    setNextVideo((prev) => (prev + 1) % projectVideos.length);
   }
 
   return (
@@ -27,6 +27,7 @@ function VideoPlayer() {
       </h3>
       <div className="bg-[#3d5168] w-[98%] md:w-[95%] lg:w-[70%] md:h-96 mx-auto relative">
         <video
+          key={projectVideos[nextVideo].url}
           controls
           preload="metadata"
           autoPlay
@@ -36,7 +37,10 @@ function VideoPlayer() {
         >
           <source src={projectVideos[nextVideo].url} type="video/mp4" />
         </video>
-        <button className="bg-[#3d5168] text-white px-5 py-2 rounded-sm my-1 absolute right-0" onClick={showNextVideo}>
+        <button
+          className="bg-[#3d5168] text-white px-5 py-2 rounded-sm my-1 absolute right-0"
+          onClick={showNextVideo}
+        >
           Next Project Video
         </button>
       </div>
