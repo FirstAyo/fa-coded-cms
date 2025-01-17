@@ -21,7 +21,7 @@ function VideoPlayer() {
   }
 
   return (
-    <div className="z-0 relative">
+    <div className="">
       <h3 className="text-[#3d5168] font-semibold mt-5 py-2 w-[98%] md:w-[95%] lg:w-[70%] mx-auto">
         {projectVideos[nextVideo].title}
       </h3>

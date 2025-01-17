@@ -20,7 +20,7 @@ function Header() {
   return (
     <>
       <section>
-        <header className="shadow">
+        <header className="shadow-2xl">
           <nav className="flex items-center justify-between w-[95%] mx-auto py-3">
             <Link
               href="/"
@@ -36,7 +36,7 @@ function Header() {
               }
             >
               {menuItems.map((menuItem, index) => (
-                <div key={index} className="py-5 md:py-2 border lg:shadow-xl">
+                <div key={index} className="py-5 md:py-2 border lg:border-[#3d5168]">
                   <Link
                     href={menuItem.href}
                     className="text-lg px-2 py-4 md:px-7 font-bold hover:bg-[#3d5168] hover:text-white md:py-3 text-white lg:text-[#3d5168]"
