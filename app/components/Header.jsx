@@ -6,6 +6,7 @@ import Button from "./Button";
 import SearchBox from "./SearchBox";
 import Image from "next/image";
 import burgerMenu from "../../public/menu-burger.svg";
+import VideoPlayer from "./VideoPlayer";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -19,7 +20,7 @@ function Header() {
   return (
     <>
       <section>
-        <header className="shadow">
+        <header className="shadow-2xl">
           <nav className="flex items-center justify-between w-[95%] mx-auto py-3">
             <Link
               href="/"
@@ -30,12 +31,12 @@ function Header() {
 
             <div
               className={
-                "z-10 flex flex-col lg:flex lg:flex-row absolute top-16 bg-[#3d5168]/80 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 lg:items-center lg:justify-center " +
+                "z-10 flex flex-col lg:flex lg:flex-row absolute top-16 bg-[#3d5168]/95 lg:bg-transparent mx-auto lg:top-0 left-0 right-0 lg:relative lg:w-[50%] py-2 lg:items-center lg:justify-center " +
                 (toggleMenu ? "flex show" : "hidden")
               }
             >
               {menuItems.map((menuItem, index) => (
-                <div key={index} className="py-5 md:py-2 border lg:shadow-xl">
+                <div key={index} className="py-5 md:py-2 border lg:border-[#3d5168]">
                   <Link
                     href={menuItem.href}
                     className="text-lg px-2 py-4 md:px-7 font-bold hover:bg-[#3d5168] hover:text-white md:py-3 text-white lg:text-[#3d5168]"
@@ -68,8 +69,14 @@ function Header() {
             </div>
           </nav>
         </header>
-
-        <SearchBox />
+        <div className="flex flex-col gap 2">
+          <div className="mb-10">
+            <VideoPlayer />
+          </div>
+          <div>
+            <SearchBox />
+          </div>
+        </div>
       </section>
     </>
   );
