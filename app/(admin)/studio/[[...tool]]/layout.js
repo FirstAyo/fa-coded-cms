@@ -11,8 +11,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Tech Arena24",
-  description: "Your Everyday Technoloy News",
+  title: "Fa Coded",
+  description: "My Portfolio Website",
 };
 
 export default function RootLayout({ children }) {
