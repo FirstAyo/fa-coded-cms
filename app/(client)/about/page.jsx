@@ -1,9 +1,9 @@
 import React from "react";
 
 export const metadata = {
-  title: "About Me | FA-Coded",
+  title: "About Me",
   description:
-    "About page of FA-Coded - All you need to know about the face behind FA-Coded ",
+    "Learn about the coder behind Facoded.com. Discover my skills in React, Next.js, JavaScript, and my passion for web development.",
 };
 
 function AboutMe() {

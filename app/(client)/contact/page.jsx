@@ -7,9 +7,9 @@ import ContactCards from "../../components/ContactCards";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact Me | FA-Coded",
+  title: "Contact Me",
   description:
-    "Contact page of FA-Coded ",
+    "Contact Facoded for web development inquiries. Let's discuss your project needs and how I can help.",
 };
 
 function ContactMe() {
