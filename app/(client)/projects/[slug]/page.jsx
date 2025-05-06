@@ -74,6 +74,8 @@ export async function generateMetadata({ params }) {
         ? [
             {
               url: urlFor(featuredImageRef),
+              width: 1200,
+              height: 630,
             },
           ]
         : [], // Handle cases where there's no featured image
