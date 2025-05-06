@@ -18,7 +18,7 @@ const postFont = Poppins({ weight: "400", subsets: ["latin"] });
 export const metadata = {
   title: {
     default: "Facoded: Web Development Portfolio - React, Next.js & More",
-    template: "%s | Facoded: Web Development Portfolio - React, Next.js & More",
+    template: "%s | Facoded: Web Development Portfolio",
   },
   description:
     "View my web development portfolio featuring projects built with React.js, Next.js, JavaScript, MySQL, NoSQL databases, WordPress, and modern front-end technologies.",
