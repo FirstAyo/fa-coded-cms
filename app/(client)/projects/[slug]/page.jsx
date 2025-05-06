@@ -12,6 +12,7 @@ import gitHubIcon from "../../../../public/github.png";
 import emailIcon from "../../../../public/email.png";
 import linkedInIcon from "../../../../public/linkedin.png";
 import Link from "next/link";
+import { type } from "express/lib/response";
 
 // interface PageProps {
 //   params: {
@@ -60,6 +61,14 @@ export async function generateMetadata({ params }) {
       absolute: post.title
     },
     description: post.exerpt,
+    openGraph: {
+      title: post.title,
+      description: post.exerpt,
+      type: "article",
+      locale: "en_US",
+      url: `https://www.facoded.com/projects/${params.slug}`,
+      siteName: "Facoded"
+    }
   };
 }
 
