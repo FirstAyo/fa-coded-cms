@@ -22,6 +22,9 @@ export const metadata = {
   },
   description:
     "View my web development portfolio featuring projects built with React.js, Next.js, JavaScript, MySQL, NoSQL databases, WordPress, and modern front-end technologies.",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }) {

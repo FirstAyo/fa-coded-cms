@@ -24,6 +24,7 @@ async function getData(slug) {
     "currentSlug": slug.current,
       title,
       content,
+      exerpt,
       featuredImage,
       publishedAt,
       _id,
@@ -51,6 +52,16 @@ async function getData(slug) {
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
 export const revalidate = 60;
+
+export async function generateMetadata({ params }) {
+  const post = await getData(params.slug);
+  return {
+    title:{
+      absolute: post.title
+    },
+    description: post.exerpt,
+  };
+}
 
 async function BlogArticle({ params }) {
   const data = await getData(params.slug);
