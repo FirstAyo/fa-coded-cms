@@ -12,7 +12,7 @@ import gitHubIcon from "../../../../public/github.png";
 import emailIcon from "../../../../public/email.png";
 import linkedInIcon from "../../../../public/linkedin.png";
 import Link from "next/link";
-import { type } from "express/lib/response";
+// import { type } from "express/lib/response";
 
 // interface PageProps {
 //   params: {
@@ -56,9 +56,11 @@ export const revalidate = 60;
 
 export async function generateMetadata({ params }) {
   const post = await getData(params.slug);
+  const featuredImageRef = post.featuredImage?.asset?._ref;
+
   return {
-    title:{
-      absolute: post.title
+    title: {
+      absolute: post.title,
     },
     description: post.exerpt,
     openGraph: {
@@ -68,10 +70,14 @@ export async function generateMetadata({ params }) {
       locale: "en_US",
       url: `https://www.facoded.com/projects/${params.slug}`,
       siteName: "Facoded",
-      images:[{
-        url: post.featuredImage,
-      }]
-    }
+      images: featuredImageRef
+        ? [
+            {
+              url: urlFor(featuredImageRef),
+            },
+          ]
+        : [], // Handle cases where there's no featured image
+    },
   };
 }
 
