@@ -67,7 +67,10 @@ export async function generateMetadata({ params }) {
       type: "article",
       locale: "en_US",
       url: `https://www.facoded.com/projects/${params.slug}`,
-      siteName: "Facoded"
+      siteName: "Facoded",
+      images:[{
+        url: post.featuredImage,
+      }]
     }
   };
 }
