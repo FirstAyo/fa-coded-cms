@@ -55,7 +55,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button text="My Resume" />
+                <Button text="Master Resume" />
               </Link>
               <div className="lg:hidden ml-3">
                 <Image
